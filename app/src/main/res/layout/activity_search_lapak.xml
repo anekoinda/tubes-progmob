@@ -82,7 +82,17 @@
                 android:text="Rekomendasi Lapak"
                 android:fontFamily="@font/poppins_regular"
                 android:textSize="15sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
         </RelativeLayout>
+
+
 
     </LinearLayout>
 
