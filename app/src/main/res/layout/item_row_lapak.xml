@@ -5,26 +5,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal">
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:orientation="vertical">
+        android:layout_height="60dp"
+        card_view:cardCornerRadius="4dp">
+        
         <TextView
             android:id="@+id/tv_item_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
             android:textSize="16sp"
             android:textStyle="bold"
             tools:text="@string/nama_lapak" />
+
         <TextView
             android:id="@+id/tv_item_from"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="2"
             tools:text="@string/lokasi" />
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
