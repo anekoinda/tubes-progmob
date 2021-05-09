@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Pembayaran Kontrak Tahunan Lapak</string>
+    <string name="nama_lapak">Nama Lapak</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="pemilik">Pemilik</string>
+    <string name="tunggakan">Tunggakan</string>
 </resources>
