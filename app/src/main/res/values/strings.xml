@@ -4,6 +4,7 @@
     <string name="lokasi">Lokasi</string>
     
     <string-array name="periode">
+        <item>Pilih periode pembayaran</item>
         <item>1 Bulan</item>
         <item>6 Bulan</item>
         <item>1 Tahun</item>

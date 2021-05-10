@@ -15,6 +15,7 @@
             android:layout_marginRight="40dp">
 
             <TextView
+                android:id="@+id/judul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pembayaran Kontrak"
@@ -23,30 +24,21 @@
                 android:textSize="25sp"/>
 
             <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pak ableh"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="25sp"/>
+
+            <TextView
                 android:id="@+id/subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="70dp"
                 android:text="Pilih periode dan lakukan pembayaran"
-                android:fontFamily="@font/poppins_regular"
-                android:textSize="15sp"/>
-
-            <TextView
-                android:id="@+id/labelLapak"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:text="Lapak : "
-                android:fontFamily="@font/poppins_regular"
-                android:textSize="15sp"/>
-
-            <TextView
-                android:id="@+id/tvName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:text="pak ableh"
-                android:layout_toRightOf="@+id/labelLapak"
                 android:fontFamily="@font/poppins_regular"
                 android:textSize="15sp"/>
 
@@ -54,8 +46,45 @@
                 android:id="@+id/pilihPeriode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="120dp"
-                />
+                android:layout_marginTop="120dp" />
+
+            <TextView
+                android:id="@+id/lblHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
+                android:text="Tagihan : "
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/harga"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="165dp"
+                android:text="Rp. 10000"
+                android:layout_toRightOf="@id/lblHarga"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/blue"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/btnBayar"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:layout_marginBottom="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/blue_fill__rounded_color"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:text="Bayar"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
         </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

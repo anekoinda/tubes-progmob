@@ -146,8 +146,7 @@
             android:paddingBottom="14dp"
             android:text="MASUK"
             android:textColor="@color/white"
-            android:textSize="15sp"
-            android:onClick="toSearch"/>
+            android:textSize="15sp"/>
 
         <RelativeLayout
             android:layout_width="wrap_content"

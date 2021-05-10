@@ -34,11 +34,11 @@ public class SearchLapak extends AppCompatActivity {
     }
 
     private void showRecyclerList(){
-        ListLapakAdapter listLapakAdapter = new ListLapakAdapter(this, list);
-        rvLapak.setAdapter(listLapakAdapter);
+        lapakAdapter = new ListLapakAdapter(this, list);
+        rvLapak.setAdapter(lapakAdapter);
         rvLapak.setLayoutManager(new LinearLayoutManager(this));
 
-        listLapakAdapter.setOnItemClickCallback(new ListLapakAdapter.OnItemClickCallback() {
+        lapakAdapter.setOnItemClickCallback(new ListLapakAdapter.OnItemClickCallback() {
             @Override
             public void onItemClicked(Lapak data) {
                 showSelectedLapak(data);
