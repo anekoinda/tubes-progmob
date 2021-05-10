@@ -17,6 +17,15 @@ public class Lapak {
         this.lokasi = lokasi;
     }
 
+    public String getNama_pemilik() {
+        return nama_pemilik;
+    }
+
+    public void setNama_pemilik(String nama_pemilik) {
+        this.nama_pemilik = nama_pemilik;
+    }
+
     private String nama_lapak;
     private String lokasi;
+    private String nama_pemilik;
 }

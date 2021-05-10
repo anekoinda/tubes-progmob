@@ -12,7 +12,7 @@
         android:layout_marginTop="20dp"
 
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="80dp"
         card_view:cardCornerRadius="4dp">
 
         <RelativeLayout
@@ -23,7 +23,7 @@
             <TextView
                 android:id="@+id/tv_item_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
@@ -40,6 +40,16 @@
                 android:ellipsize="end"
                 android:maxLines="2"
                 tools:text="@string/lokasi" />
+
+            <TextView
+                android:id="@+id/tv_item_pemilik"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                tools:text="@string/nama_pemilik" />
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>

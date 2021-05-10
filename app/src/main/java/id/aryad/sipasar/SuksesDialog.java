@@ -16,7 +16,7 @@ public class SuksesDialog extends AppCompatDialogFragment {
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("Berhasil!")
-                .setMessage("Data pembayaran telah disimpan")
+                .setMessage("Data pembayaran telah dikirim ke pemilik lapak.")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {

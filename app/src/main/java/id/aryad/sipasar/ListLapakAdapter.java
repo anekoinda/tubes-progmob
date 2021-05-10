@@ -44,6 +44,7 @@ public class ListLapakAdapter extends RecyclerView.Adapter<ListLapakAdapter.List
         final Lapak lapak = listLapak.get(position);
         holder.tvName.setText(lapak.getNama_lapak());
         holder.tvFrom.setText(lapak.getLokasi());
+        holder.tvPemilik.setText(lapak.getNama_pemilik());
         holder.relative.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -70,12 +71,13 @@ public class ListLapakAdapter extends RecyclerView.Adapter<ListLapakAdapter.List
     }
 
     public class ListViewHolder extends RecyclerView.ViewHolder {
-        TextView tvName, tvFrom;
+        TextView tvName, tvFrom, tvPemilik;
         RelativeLayout relative;
         ListViewHolder(View itemView) {
             super(itemView);
             tvName = itemView.findViewById(R.id.tv_item_name);
             tvFrom = itemView.findViewById(R.id.tv_item_from);
+            tvPemilik = itemView.findViewById(R.id.tv_item_pemilik);
             relative=itemView.findViewById(R.id.relative);
         }
     }
