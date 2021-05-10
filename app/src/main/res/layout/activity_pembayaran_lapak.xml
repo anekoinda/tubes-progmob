@@ -30,7 +30,7 @@
                 android:text="pak ableh"
                 android:layout_marginTop="30dp"
                 android:textColor="@color/blue"
-                android:fontFamily="@font/poppins_medium"
+                android:fontFamily="@font/poppins_regular"
                 android:textSize="25sp"/>
 
             <TextView

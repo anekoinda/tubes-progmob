@@ -14,7 +14,7 @@ import android.widget.Toast;
 import org.w3c.dom.Text;
 
 public class PembayaranLapak extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    TextView tvName, harga, hargaKontrak, btnBayar;
+    TextView tvName, harga, btnBayar;
     String namaLapak;
 
     @Override
@@ -49,17 +49,19 @@ public class PembayaranLapak extends AppCompatActivity implements AdapterView.On
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        //harga = findViewById(R.id.harga);
-        //String text = parent.getItemAtPosition(position).toString();
-        //if (text == "1 Bulan"){
-          //  hargaKontrak.setText("Rp. 200.000");
-        //}else if(text == "6 Bulan"){
-        //    hargaKontrak.setText("Rp. 1.200.000");
-        //}else if(text == "1 Tahun"){
-         //   hargaKontrak.setText("Rp.2.400.000");
-        //}else{
-          //  hargaKontrak.setText("Rp. 4.800.000");
-        //}
+        harga = findViewById(R.id.harga);
+        String text = parent.getItemAtPosition(position).toString();
+        if (position == 1){
+            harga.setText("Rp. 200.000");
+        }else if(position == 2) {
+            harga.setText("Rp. 1.200.000");
+        }else if(position == 3){
+            harga.setText("Rp.2.400.000");
+        }else if (position == 4){
+            harga.setText("Rp. 4.800.000");
+        }else {
+            harga.setText("");
+        }
     }
 
     @Override
