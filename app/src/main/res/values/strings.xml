@@ -2,6 +2,11 @@
     <string name="app_name">Pembayaran Kontrak Tahunan Lapak</string>
     <string name="nama_lapak">Nama Lapak</string>
     <string name="lokasi">Lokasi</string>
-    <string name="pemilik">Pemilik</string>
-    <string name="tunggakan">Tunggakan</string>
+    
+    <string-array name="periode">
+        <item>1 Bulan</item>
+        <item>6 Bulan</item>
+        <item>1 Tahun</item>
+        <item>2 Tahun</item>
+    </string-array>
 </resources>
