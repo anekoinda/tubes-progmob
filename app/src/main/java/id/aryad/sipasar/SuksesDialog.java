@@ -3,6 +3,7 @@ package id.aryad.sipasar;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -17,9 +18,11 @@ public class SuksesDialog extends AppCompatDialogFragment {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("Berhasil!")
                 .setMessage("Data pembayaran telah dikirim ke pemilik lapak.")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Lihat Riwayat", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
+                    public void onClick(DialogInterface dialogInterface, int which) {
+                        Intent intent = new Intent(getActivity(), Riwayat.class);
+                        getActivity().startActivity(intent);
                     }
                 });
         return builder.create();

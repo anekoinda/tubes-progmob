@@ -14,8 +14,8 @@ import android.widget.Toast;
 import org.w3c.dom.Text;
 
 public class PembayaranLapak extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    TextView tvName, harga, btnBayar;
-    String namaLapak;
+    TextView tvName, harga, btnBayar, tanggal, tvTanggal;
+    String namaLapak, tanggalLapak;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +24,12 @@ public class PembayaranLapak extends AppCompatActivity implements AdapterView.On
 
         btnBayar = findViewById(R.id.btnBayar);
         tvName = findViewById(R.id.tvName);
+        tvTanggal = findViewById(R.id.tvTanggal);
         namaLapak=getIntent().getStringExtra("tvName");
+        tanggalLapak=getIntent().getStringExtra("tvTanggal");
 
         tvName.setText(namaLapak);
+        tvTanggal.setText(tanggalLapak);
 
         Spinner spinner = (Spinner) findViewById(R.id.pilihPeriode);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.periode, android.R.layout.simple_spinner_item);

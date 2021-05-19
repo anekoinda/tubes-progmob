@@ -24,35 +24,54 @@
                 android:textSize="25sp"/>
 
             <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Pilih periode dan lakukan pembayaran"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="15sp"/>
+
+            <TextView
                 android:id="@+id/tvName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="pak ableh"
-                android:layout_marginTop="30dp"
-                android:textColor="@color/blue"
-                android:fontFamily="@font/poppins_regular"
-                android:textSize="25sp"/>
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="20sp"/>
 
             <TextView
-                android:id="@+id/subtitle"
+                android:id="@+id/lblTanggal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="70dp"
-                android:text="Pilih periode dan lakukan pembayaran"
+                android:layout_marginTop="100dp"
+                android:text="Masa kontrak berakhir tanggal "
                 android:fontFamily="@font/poppins_regular"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:text="Rp. 10000"
+                android:layout_toRightOf="@id/lblTanggal"
+                android:fontFamily="@font/poppins_medium"
                 android:textSize="15sp"/>
 
             <Spinner
                 android:id="@+id/pilihPeriode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="120dp" />
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="-5dp"/>
 
             <TextView
                 android:id="@+id/lblHarga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="170dp"
+                android:layout_marginTop="200dp"
                 android:text="Tagihan : "
                 android:fontFamily="@font/poppins_regular"
                 android:textSize="15sp"/>
@@ -61,7 +80,7 @@
                 android:id="@+id/harga"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="165dp"
+                android:layout_marginTop="195dp"
                 android:text="Rp. 10000"
                 android:layout_toRightOf="@id/lblHarga"
                 android:fontFamily="@font/poppins_medium"

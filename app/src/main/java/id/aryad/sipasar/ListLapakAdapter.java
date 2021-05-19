@@ -45,12 +45,14 @@ public class ListLapakAdapter extends RecyclerView.Adapter<ListLapakAdapter.List
         holder.tvName.setText(lapak.getNama_lapak());
         holder.tvFrom.setText(lapak.getLokasi());
         holder.tvPemilik.setText(lapak.getNama_pemilik());
+        holder.tvTanggal.setText(lapak.getTanggal());
         holder.relative.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, PembayaranLapak.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.putExtra("tvName", lapak.getNama_lapak());
+                intent.putExtra("tvTanggal", lapak.getTanggal());
                 context.startActivity(intent);
             }
         });
@@ -71,13 +73,14 @@ public class ListLapakAdapter extends RecyclerView.Adapter<ListLapakAdapter.List
     }
 
     public class ListViewHolder extends RecyclerView.ViewHolder {
-        TextView tvName, tvFrom, tvPemilik;
+        TextView tvName, tvFrom, tvPemilik, tvTanggal;
         RelativeLayout relative;
         ListViewHolder(View itemView) {
             super(itemView);
             tvName = itemView.findViewById(R.id.tv_item_name);
             tvFrom = itemView.findViewById(R.id.tv_item_from);
             tvPemilik = itemView.findViewById(R.id.tv_item_pemilik);
+            tvTanggal = itemView.findViewById(R.id.tv_item_tanggal);
             relative=itemView.findViewById(R.id.relative);
         }
     }

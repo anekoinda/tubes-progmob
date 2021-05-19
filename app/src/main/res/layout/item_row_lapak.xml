@@ -12,7 +12,7 @@
         android:layout_marginTop="20dp"
 
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
         card_view:cardCornerRadius="4dp">
 
         <RelativeLayout
@@ -50,6 +50,17 @@
                 android:ellipsize="end"
                 android:maxLines="2"
                 tools:text="@string/nama_pemilik" />
+
+            <TextView
+                android:id="@+id/tv_item_tanggal"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:ellipsize="end"
+                android:maxLines="2"
+                tools:text="@string/tanggal" />
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>

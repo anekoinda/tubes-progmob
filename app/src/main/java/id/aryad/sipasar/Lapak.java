@@ -25,7 +25,16 @@ public class Lapak {
         this.nama_pemilik = nama_pemilik;
     }
 
+    public String getTanggal() {
+        return tanggal;
+    }
+
+    public void setTanggal(String tanggal) {
+        this.tanggal = tanggal;
+    }
+
     private String nama_lapak;
     private String lokasi;
     private String nama_pemilik;
+    private String tanggal;
 }
