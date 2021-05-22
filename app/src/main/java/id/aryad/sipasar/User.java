@@ -1,46 +1,44 @@
 package id.aryad.sipasar;
 
 public class User {
-    int idUser;
-    String Username="", Password="";
-    boolean Valid;
+    int id_admin;
+    int id_pegawai;
+    String username;
+    String password;
+    AdminRole role;
+    // 1 aktif, 0 nonaktif
+    int status;
 
-    public User(){}
-    public User(int idUser, String username, String password) {
-        this.idUser = idUser;
-        Username = username;
-        Password = password;
+    public User(int id_admin, int id_pegawai, String username, String password, AdminRole role, int status) {
+        this.id_admin = id_admin;
+        this.id_pegawai = id_pegawai;
+        this.username = username;
+        this.password = password;
+        this.role = role;
+        this.status = status;
     }
 
-    public int getIdUser() {
-        return idUser;
+    public int getId_admin() {
+        return id_admin;
     }
 
-    public void setIdUser(int idUser) {
-        this.idUser = idUser;
+    public int getId_pegawai() {
+        return id_pegawai;
     }
 
     public String getUsername() {
-        return Username;
-    }
-
-    public void setUsername(String username) {
-        Username = username;
+        return username;
     }
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
-    public void setPassword(String password) {
-        Password = password;
+    public AdminRole getRole() {
+        return role;
     }
 
-    public boolean isValid() {
-        return Valid;
-    }
-
-    public void setValid(boolean valid) {
-        Valid = valid;
+    public int getStatus() {
+        return status;
     }
 }
